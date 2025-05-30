@@ -1,36 +1,36 @@
 # Sentinel: Attention Probing of Proxy Models for LLM Context Compression
 
-> Official repository for the paper:  
-> **"Sentinel: Attention Probing of Proxy Models for LLM Context Compression with an Understanding Perspective"**  
-> 📄 [arXiv link](https://arxiv.org/abs/XXXX.XXXXX) — *coming soon or replace with real link*
 
+[![arXiv](https://img.shields.io/badge/arXiv-2505.23277-b31b1b.svg)](https://arxiv.org/abs/2505.23277)
 ---
 
 ## 📌 Overview
 
-**Sentinel** is a lightweight and interpretable sentence-level context compression framework for Large Language Models (LLMs). Instead of relying on supervised compression models or full-scale generation, Sentinel probes decoder attention from a small off-the-shelf proxy model to identify query-relevant context.
+**Sentinel** is a lightweight and interpretable context compression framework for Large Language Models (LLMs).  
+It reformulates compression as an **attention-based understanding task**, using **decoder attention from an off-the-shelf 0.5B proxy model** to identify sentence-level, query-relevant context—**without finetuning or supervision**.
 
-- ✅ No finetuning required  
-- ✅ Sentence-level compression  
-- ✅ Compatible with any LLM backbone  
-- ✅ Model-agnostic and fast
-
-> "We find that query-context understanding is stable across model scales, enabling small models to emulate the attention behaviors of large LLMs."
+- Sentence-level compression  
+- Compatible with any LLM backbone  
+- Fast, model-agnostic, and scalable
 
 ---
 
-## 🔍 Paper Abstract
+## 🎯 Key Contributions
 
-> Retrieval-augmented generation (RAG) enhances LLMs with external context, but retrieved passages are often lengthy, noisy, or exceed input limits.  
-> We propose **Sentinel**, a lightweight compression method that probes decoder attention from a 0.5B proxy LLM using a probing classifier.  
-> On LongBench, Sentinel achieves up to 5× compression while matching the QA performance of 7B-scale systems.
+- **Formulation**: Reframe context compression as **attention-based query-context relevance estimation**, avoiding the need for a trained compression model.
+
+- **Proxy-Based Attention Probing**: Introduce **Sentinel**, which leverages a compact **0.5B decoder-only LLM** to probe attention for salient sentence selection.
+
+- **Scale-Invariant Behavior**: Show that attention-derived relevance signals are **stable across model sizes**, allowing small proxies to mimic large-model selection behavior.
+
+- **Empirical Effectiveness**: On **LongBench** (English & Chinese), Sentinel achieves **up to 5× input compression**, matching the QA performance of **7B-scale compression baselines**.
 
 ---
 
-## 🚧 Project Status
+## 📂 Project Status
 
-This repository is currently a placeholder for the paper.  
-Code and data will be released soon. Stay tuned!
+This repository currently serves as a placeholder.  
+**Code, data, and experimental pipelines will be released soon.**
 
 ---
 
@@ -39,9 +39,12 @@ Code and data will be released soon. Stay tuned!
 If you find our work helpful, please cite:
 
 ```bibtex
-@article{zhang2025sentinel,
-  title={Sentinel: Attention Probing of Proxy Models for LLM Context Compression with an Understanding Perspective},
-  author={Zhang, Yong and Huang, Yanwen and Cheng, Ning and Guo, Yang and Zhu, Yun and Wang, Yanmeng and Wang, Shaojun and Xiao, Jing},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2025}
+@misc{zhang2025sentinelattentionprobingproxy,
+      title={Sentinel: Attention Probing of Proxy Models for LLM Context Compression with an Understanding Perspective}, 
+      author={Yong Zhang and Yanwen Huang and Ning Cheng and Yang Guo and Yun Zhu and Yanmeng Wang and Shaojun Wang and Jing Xiao},
+      year={2025},
+      eprint={2505.23277},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.23277}, 
 }
