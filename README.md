@@ -1,8 +1,12 @@
-# Sentinel: Attention Probing of Proxy Models for LLM Context Compression
+<p align="center">
+<h1 align="center">Sentinel: Attention Probing of Proxy Models for LLM Context Compression
+
+<p align="center">
+    <a href="https://arxiv.org/abs/2505.23277"><img alt="Paper" src="https://img.shields.io/badge/arXiv-2505.23277-b31b1b.svg"></a>
+</p>
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2505.23277-b31b1b.svg)](https://arxiv.org/abs/2505.23277)
----
+
 
 ## 📌 Overview
 
