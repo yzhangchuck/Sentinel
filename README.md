@@ -53,6 +53,8 @@ cd Sentinel
 
 # Install dependencies
 pip install -r requirements.txt
+python -c "import nltk; nltk.download('punkt')"
+python -m spacy download zh_core_web_sm
 ```
 
 ### Demo Script
