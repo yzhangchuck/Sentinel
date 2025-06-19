@@ -7,6 +7,17 @@
 
 
 
+## 📈 Results
+
+<p align="center">
+  <img src="assets/longbench_gpt35.png" alt="LongBench GPT-3.5 Results" width="750"/>
+</p>
+
+<p align="center">
+  <img src="assets/longbench_qwen7b.png" alt="LongBench Qwen Results" width="750"/>
+</p>
+
+---
 
 ## 📌 Overview
 
@@ -62,18 +73,6 @@ Pre-trained Sentinel classifier is available on Hugging Face: [ReRaWo/Sentinel](
 
 ---
 
-
-## 📈 Results
-
-<p align="center">
-  <img src="assets/longbench_gpt35.png" alt="LongBench GPT-3.5 Results" width="750"/>
-</p>
-
-<p align="center">
-  <img src="assets/longbench_qwen7b.png" alt="LongBench Qwen Results" width="750"/>
-</p>
-
----
 
 ## 📬 Contact
 
