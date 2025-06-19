@@ -31,10 +31,53 @@ It reformulates compression as an **attention-based understanding task**, using 
 
 ---
 
-## 📂 Project Status
+## 🚀 Quick Start
 
-This repository currently serves as a placeholder.  
-**Code, data, and experimental pipelines will be released soon.**
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yzhangchuck/Sentinel.git
+cd Sentinel
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Demo Script
+
+Run the included demonstration:
+
+```bash
+python demo_attention_compression.py
+```
+
+This script showcases both raw attention filtering and detector-based compression methods with sample Chinese and English texts.
+
+---
+
+## 📦 Model Downloads
+
+Pre-trained Sentinel classifier is available on Hugging Face: [ReRaWo/Sentinel](https://huggingface.co/ReRaWo/Sentinel)
+
+---
+
+
+## 📈 Results
+
+<p align="center">
+  <img src="assets/longbench_gpt35.png" alt="LongBench GPT-3.5 Results" width="750"/>
+</p>
+
+<p align="center">
+  <img src="assets/longbench_qwen7b.png" alt="LongBench Qwen Results" width="750"/>
+</p>
+
+---
+
+## 📬 Contact
+
+- **Email**: zhangyong.chuck@gmail.com
 
 ---
 
