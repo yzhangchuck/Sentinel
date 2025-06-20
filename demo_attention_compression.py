@@ -222,7 +222,7 @@ def demo_detector_based():
     print()
 
 
-# def demo_selected_feature_idx():
+def demo_selected_feature_idx():
     """Demo selected feature idx mode with specialized detector"""
     print("=== Selected Feature Idx Demo ===")
     
