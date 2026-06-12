@@ -53,17 +53,18 @@ Sentinel takes a different perspective:
 
 ### Compression Efficiency
 
-A800 80GB · Batch Size 1 · 10K Context · 2K Output Budget
+**Dataset:** LongBench **MultiFieldQA-Zh** (`multifieldqa_zh`) · **n=200** samples (mean)  
+**Setup:** A800 80GB · batch size 1 · max input **10,240** tokens · **2,000**-token compression budget
 
-| Method | Runtime |
-|:-------|--------:|
+| Method | Runtime (mean) |
+|:-------|---------------:|
 | Generative Compression (HF, Qwen2.5-7B) | 40.6 s |
 | Generative Compression (vLLM, Qwen2.5-7B) | 27.4 s |
 | **Sentinel (Qwen2.5-0.5B)** | **74.6 ms** |
 
-> **Over 300× faster than generation-based compression while using only a frozen 0.5B proxy model.**
+> **Over 300× faster** than generation-based compression (vs. vLLM 7B: 27.4 s → 74.6 ms) using only a frozen 0.5B proxy model. Sentinel MFQA-Zh score: **62.48** (same setting).
 
-Demo (4,700 tokens): **0.06 s** compress latency on A800.
+Demo (single run, 4,700 tokens): **0.06 s** compress latency on A800.
 
 ### Key Results
 
